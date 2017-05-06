@@ -1,5 +1,7 @@
 # rook-access-rules
 
+[![Build Status](https://travis-ci.org/amoe/rook-middleware-access-rules.svg?branch=master)](https://travis-ci.org/amoe/rook-middleware-access-rules)
+
 Implements a Rook middleware that you can use to apply authorization handlers to
 your endpoints.
 
