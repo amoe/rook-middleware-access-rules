@@ -1,4 +1,4 @@
-(ns rook-access-rules.target-test-ns
+(ns solasistim.rook-middleware-access-rules.target-test-ns
   (:require [ring.util.response :as r]
             [buddy.auth.accessrules :as accessrules]))
 

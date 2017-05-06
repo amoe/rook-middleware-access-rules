@@ -1,4 +1,4 @@
-(ns rook-access-rules.core
+(ns solasistim.rook-middleware-access-rules
   (:require [buddy.auth.accessrules :as accessrules]))
 
 (defn make-access-rule-middleware [error-policy]

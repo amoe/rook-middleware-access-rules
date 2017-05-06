@@ -1,4 +1,4 @@
-(defproject rook-access-rules "0.1.0-SNAPSHOT"
+(defproject rook-middleware-access-rules "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -7,7 +7,5 @@
                  [io.aviso/rook "0.1.39"]
                  [buddy/buddy-auth "1.4.1"]
                  [ring/ring-mock "0.3.0"]
-                 [ring/ring-core "1.6.0"]]
-  :main ^:skip-aot rook-access-rules.core
-  :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+                 [ring/ring-core "1.6.0"]])
+

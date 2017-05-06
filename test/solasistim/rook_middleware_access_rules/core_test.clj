@@ -1,6 +1,6 @@
-(ns rook-access-rules.core-test
+(ns solasistim.rook-middleware-access-rules.core-test
   (:require [clojure.test :refer :all]
-            [rook-access-rules.core :as core]
+            [solasistim.rook-middleware-access-rules :as core]
             [buddy.auth.accessrules :as accessrules]
             [io.aviso.rook :as rook]
             [ring.util.response :as r]
@@ -12,7 +12,7 @@
 (defn make-handler []
   (rook/namespace-handler
    {:default-middleware (core/make-access-rule-middleware error-policy)}
-   ['rook-access-rules.target-test-ns]))
+   ['solasistim.rook-middleware-access-rules.target-test-ns]))
 
 (deftest unrestricted-works
   (let [request (mock/request :get "/unrestricted")
