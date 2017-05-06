@@ -1,6 +1,7 @@
 # rook-access-rules
 
-FIXME: description
+Implements a Rook middleware that you can use to apply authorization handlers to
+your endpoints.
 
 ## Installation
 
