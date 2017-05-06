@@ -1,4 +1,4 @@
-(defproject solasistim/rook-middleware-access-rules "0.1.0"
+(defproject solasistim/rook-middleware-access-rules "0.1.1-SNAPSHOT"
   :description
   "access rule support for authorization of Rook endpoint handlers, using buddy-auth"
   :url "http://github.com/amoe/rook-middleware-access-rules"
