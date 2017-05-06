@@ -10,7 +10,7 @@ for the Pedestal framework.
 
 ## Installation
 
-![](https://clojars.org/compojure/latest-version.svg)
+![](https://clojars.org/solasistim/rook-middleware-access-rules/latest-version.svg)
 
 ## Usage
 
