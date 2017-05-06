@@ -5,6 +5,9 @@
 Implements a Rook middleware that you can use to apply authorization handlers to
 your endpoints.
 
+This is a library for Rook 1.x series, *not* the newer Rook 2.x that is a plugin
+for the Pedestal framework.
+
 ## Installation
 
 Download from http://example.com/FIXME.
