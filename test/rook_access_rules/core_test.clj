@@ -7,17 +7,16 @@
 
 (defn make-handler []
   (rook/namespace-handler
-   {:default-middleware core/wrap-with-access-rules}
    ['rook-access-rules.target-test-ns]))
 
-(deftest a-test
+(deftest unrestricted-works
   (let [request (mock/request :get "/unrestricted")
         handler (make-handler)]
     (let [response (handler request)]
       (is (= {:ok true} (:body response))))))
 
 
-(deftest a-test
+(deftest restricted-works
   (let [request (mock/request :get "/restricted-always-fail")
         handler (make-handler)]
     (let [response (handler request)]

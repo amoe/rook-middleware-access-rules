@@ -8,9 +8,10 @@
 (defn unrestricted-handler
   {:route [:get ["unrestricted"]]}
   []
+  (println "inside unrestricted handler")
   (r/response {:ok true}))
 
-(defn unrestricted-handler
+(defn restricted-handler
   {:route [:get ["restricted-always-fail"]]
    :access-rule always-fail}
   []
