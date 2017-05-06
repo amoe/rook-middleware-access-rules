@@ -3,7 +3,11 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.8.0"]]
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [io.aviso/rook "0.1.39"]
+                 [buddy/buddy-auth "1.4.1"]
+                 [ring/ring-mock "0.3.0"]
+                 [ring/ring-core "1.6.0"]]
   :main ^:skip-aot rook-access-rules.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
