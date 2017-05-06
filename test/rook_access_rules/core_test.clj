@@ -8,7 +8,7 @@
   (rook/namespace-handler ['rook-access-rules.target-test-ns]))
 
 (deftest a-test
-  (let [request (mock/request :get "/")
+  (let [request (mock/request :get "/unrestricted")
         handler (make-handler)]
     (let [response (handler request)]
       (is (= {:ok true} (:body response))))))
