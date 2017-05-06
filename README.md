@@ -10,7 +10,7 @@ for the Pedestal framework.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+![](https://clojars.org/compojure/latest-version.svg)
 
 ## Usage
 
