@@ -19,7 +19,7 @@ which is an error handler for buddy-auth authorization failures.  The signature
 of this function is as such:
 
      (defn my-handler [request rejected-val]
-       ; Do something appropriate
+       ;; Do something appropriate
        (-> "I'm sorry Dave" r/response (r/status 401)))
 
 Access rules can choose to reject with a value, `(accessrules/error 42)`.  This
