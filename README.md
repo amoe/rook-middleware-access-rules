@@ -22,8 +22,16 @@ of this function is as such:
        ;; Do something appropriate
        (-> "I'm sorry Dave" r/response (r/status 401)))
 
+Access rules handlers take the request as an argument and return a success or
+error marker record.
+
+    (defn my-access-rule-handler [request]
+      ;; always authorize
+      (accessrules/success))
+
 Access rules can choose to reject with a value, `(accessrules/error 42)`.  This
 value becomes available inside the error handler as `rejected-val`.
+
 
 Add it to your Rook namespace handler configuration thusly:
 
